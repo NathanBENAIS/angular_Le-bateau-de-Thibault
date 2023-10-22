@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./Pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
@@ -13,43 +13,43 @@ const routes: Routes = [
   },
   {
     path: 'products',
-    loadChildren: () => import('./products/products.module').then( m => m.ProductsPageModule)
+    loadChildren: () => import('./Pages/products/products.module').then( m => m.ProductsPageModule)
   },
   {
     path: 'single-product',
-    loadChildren: () => import('./single-product/single-product.module').then( m => m.SingleProductPageModule)
+    loadChildren: () => import('./Pages/single-product/single-product.module').then( m => m.SingleProductPageModule)
   },
   {
     path: 'recipes',
-    loadChildren: () => import('./recipes/recipes.module').then( m => m.RecipesPageModule)
+    loadChildren: () => import('./Pages/recipes/recipes.module').then( m => m.RecipesPageModule)
   },
   {
     path: 'single-recipe',
-    loadChildren: () => import('./single-recipe/single-recipe.module').then( m => m.SingleRecipePageModule)
+    loadChildren: () => import('./Pages/single-recipe/single-recipe.module').then( m => m.SingleRecipePageModule)
   },
   {
     path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+    loadChildren: () => import('./Pages/cart/cart.module').then( m => m.CartPageModule)
   },
   {
     path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+    loadChildren: () => import('./Pages/contact/contact.module').then( m => m.ContactPageModule)
   },
   {
     path: 'boats',
-    loadChildren: () => import('./boats/boats.module').then( m => m.BoatsPageModule)
+    loadChildren: () => import('./Pages/boats/boats.module').then( m => m.BoatsPageModule)
   },
   {
     path: 'single-boat',
-    loadChildren: () => import('./single-boat/single-boat.module').then( m => m.SingleBoatPageModule)
+    loadChildren: () => import('./Pages/single-boat/single-boat.module').then( m => m.SingleBoatPageModule)
   },
   {
     path: 'single-restaurant',
-    loadChildren: () => import('./single-restaurant/single-restaurant.module').then( m => m.SingleRestaurantPageModule)
+    loadChildren: () => import('./Pages/single-restaurant/single-restaurant.module').then( m => m.SingleRestaurantPageModule)
   },
   {
     path: 'restaurants',
-    loadChildren: () => import('./restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
+    loadChildren: () => import('./Pages/restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
   },
 
 ];

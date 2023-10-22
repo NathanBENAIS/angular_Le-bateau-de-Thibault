@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<ion-content padding>
+  <p style="text-align: center">Choisisez vos produits</p>
+
+  <ion-button *ngFor="let product of productsList" (click)="onLoadProduct(product)" expand="full"
+   class="btn-product" ><img [src]="ImgPoulpe" width="100" height="100" />
+    <p style="width: 100%">{{product.name}}</p>
+  </ion-button>
+</ion-content>
+
+

@@ -1,0 +1,10 @@
+<app-header></app-header>
+<ion-content padding>
+  <p style="text-align: center; ">Choisisez vos produits</p>
+
+    <p *ngFor="let line of product.description; let i = index" class="list-product">
+      <span class="left-align">{{line}}</span>
+        <span class="right-align">{{product.price[i]}}</span>
+    </p>
+
+</ion-content>
